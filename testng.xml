@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name=" Check Login" >
+        <classes>
+            <class name="TestCases.TC01_LoginPage">
+                <methods>
+                    <include name="loginWithValidData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="SelectRandomProduct">
+        <classes>
+            <class name="TestCases.TC01_LoginPage">
+                <methods>
+                    <include name="loginWithValidData_P"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC02_RandomProducts">
+                <methods>
+                    <include name="addRandomProducts_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
